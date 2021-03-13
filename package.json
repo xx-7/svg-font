@@ -1,0 +1,23 @@
+{
+  "name": "svg2font",
+  "version": "1.0.1",
+  "description": "",
+  "main": "./dist/xdfont/xdfont.scss",
+  "scripts": {
+    "build": "gulp --gulpfile ./src/build.js",
+    "woff": "gulp --gulpfile ./src/woff.js",
+    "demo": "node ./src/demo.js",
+    "py": "fontforge --lang=py -script ./src/build.py",
+    "export": "fontforge --lang=py -script ./src/export.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "fs-extra": "^9.0.1",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0"
+  },
+  "dependencies": {}
+}
