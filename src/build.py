@@ -31,6 +31,7 @@ def addSvgs(font, maps, startUnicode):
     keys = maps.keys()
     for key in iter(keys):
         uinName = "uni%X" % (unicode)
+        #uinName = key
         font.createChar(unicode,uinName)
         glyph = font.createMappedChar(uinName)
         glyph.importOutlines(maps[key])
